@@ -1,11 +1,11 @@
-# @mcs/brand-system
+# @mission-critical-saas/brand-system
 
 MCS Brand Design System - CSS tokens, React components, and Tailwind preset for Hour Timesheet, Minute7, LMNTL.AI, and Mission Critical SaaS products.
 
 ## Installation
 
 ```bash
-npm install @mcs/brand-system
+npm install @mission-critical-saas/brand-system
 ```
 
 > **Note:** This package is hosted on GitHub Packages. You may need to configure npm to use the GitHub registry for the `@mcs` scope.
@@ -16,13 +16,13 @@ npm install @mcs/brand-system
 
 ```typescript
 // In your app entry point
-import '@mcs/brand-system/tokens/css';
+import '@mission-critical-saas/brand-system/tokens/css';
 ```
 
 ### 2. Wrap with BrandProvider (React)
 
 ```tsx
-import { BrandProvider } from '@mcs/brand-system/components';
+import { BrandProvider } from '@mission-critical-saas/brand-system/components';
 
 function App() {
   return (
@@ -36,8 +36,8 @@ function App() {
 ### 3. Use Brand Components
 
 ```tsx
-import { TrustBadges } from '@mcs/brand-system/components';
-import { TimeTrackingIcon } from '@mcs/brand-system/icons/hour';
+import { TrustBadges } from '@mission-critical-saas/brand-system/components';
+import { TimeTrackingIcon } from '@mission-critical-saas/brand-system/icons/hour';
 
 function FeatureCard() {
   return (
@@ -53,15 +53,15 @@ function FeatureCard() {
 
 | Export | Description |
 |--------|-------------|
-| `@mcs/brand-system` | Main entry with all exports |
-| `@mcs/brand-system/tokens` | TypeScript color constants |
-| `@mcs/brand-system/tokens/css` | CSS custom properties |
-| `@mcs/brand-system/icons/hour` | Hour Timesheet icons |
-| `@mcs/brand-system/icons/minute7` | Minute7 icons |
-| `@mcs/brand-system/icons/lmntl` | LMNTL.AI icons |
-| `@mcs/brand-system/icons/mcs` | MCS corporate icons |
-| `@mcs/brand-system/components` | React components |
-| `@mcs/brand-system/tailwind-preset` | Tailwind CSS preset |
+| `@mission-critical-saas/brand-system` | Main entry with all exports |
+| `@mission-critical-saas/brand-system/tokens` | TypeScript color constants |
+| `@mission-critical-saas/brand-system/tokens/css` | CSS custom properties |
+| `@mission-critical-saas/brand-system/icons/hour` | Hour Timesheet icons |
+| `@mission-critical-saas/brand-system/icons/minute7` | Minute7 icons |
+| `@mission-critical-saas/brand-system/icons/lmntl` | LMNTL.AI icons |
+| `@mission-critical-saas/brand-system/icons/mcs` | MCS corporate icons |
+| `@mission-critical-saas/brand-system/components` | React components |
+| `@mission-critical-saas/brand-system/tailwind-preset` | Tailwind CSS preset |
 
 ## Brands
 
@@ -74,7 +74,7 @@ function FeatureCard() {
 
 ```js
 // tailwind.config.js
-import { mcsBrandPreset } from '@mcs/brand-system/tailwind-preset';
+import { mcsBrandPreset } from '@mission-critical-saas/brand-system/tailwind-preset';
 
 export default {
   presets: [mcsBrandPreset],
