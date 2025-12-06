@@ -1,0 +1,93 @@
+{
+  "name": "@mcs/brand-system",
+  "version": "1.0.0",
+  "description": "MCS Brand Design System - CSS tokens, React components, and Tailwind preset",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./tokens": {
+      "import": "./dist/tokens/index.js",
+      "types": "./dist/tokens/index.d.ts"
+    },
+    "./tokens/css": "./dist/tokens/brand-tokens.css",
+    "./icons/hour": {
+      "import": "./dist/icons/hour/index.js",
+      "types": "./dist/icons/hour/index.d.ts"
+    },
+    "./icons/minute7": {
+      "import": "./dist/icons/minute7/index.js",
+      "types": "./dist/icons/minute7/index.d.ts"
+    },
+    "./icons/lmntl": {
+      "import": "./dist/icons/lmntl/index.js",
+      "types": "./dist/icons/lmntl/index.d.ts"
+    },
+    "./icons/mcs": {
+      "import": "./dist/icons/mcs/index.js",
+      "types": "./dist/icons/mcs/index.d.ts"
+    },
+    "./components": {
+      "import": "./dist/components/index.js",
+      "types": "./dist/components/index.d.ts"
+    },
+    "./tailwind-preset": {
+      "import": "./dist/tailwind-preset.js",
+      "types": "./dist/tailwind-preset.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup && mkdir -p dist/tokens && cp src/tokens/brand-tokens.css dist/tokens/",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.0",
+    "react": "^18.2.0",
+    "tailwindcss": "^4.1.17",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mission-Critical-SaaS/brand-system.git"
+  },
+  "keywords": [
+    "mcs",
+    "brand",
+    "design-system",
+    "hour-timesheet",
+    "minute7",
+    "lmntl",
+    "tailwind",
+    "react"
+  ],
+  "author": "Mission Critical SaaS",
+  "license": "MIT"
+}
