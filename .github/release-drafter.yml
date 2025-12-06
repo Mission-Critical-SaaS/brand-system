@@ -1,0 +1,101 @@
+# Release Drafter Configuration
+# https://github.com/release-drafter/release-drafter
+
+name-template: 'v$RESOLVED_VERSION'
+tag-template: 'v$RESOLVED_VERSION'
+
+# Categories for organizing changes
+categories:
+  - title: 'New Features'
+    labels:
+      - 'feature'
+      - 'enhancement'
+  - title: 'Bug Fixes'
+    labels:
+      - 'fix'
+      - 'bugfix'
+      - 'bug'
+  - title: 'Components'
+    labels:
+      - 'component'
+      - 'icons'
+  - title: 'Tokens & Styles'
+    labels:
+      - 'tokens'
+      - 'css'
+      - 'styles'
+  - title: 'Documentation'
+    labels:
+      - 'documentation'
+      - 'docs'
+  - title: 'Maintenance'
+    labels:
+      - 'chore'
+      - 'dependencies'
+      - 'ci'
+
+# Version resolver based on labels
+version-resolver:
+  major:
+    labels:
+      - 'major'
+      - 'breaking'
+  minor:
+    labels:
+      - 'minor'
+      - 'feature'
+      - 'enhancement'
+  patch:
+    labels:
+      - 'patch'
+      - 'fix'
+      - 'bugfix'
+      - 'chore'
+      - 'dependencies'
+  default: patch
+
+# Exclude certain labels from release notes
+exclude-labels:
+  - 'skip-changelog'
+
+# Auto-labeler for PRs
+autolabeler:
+  - label: 'documentation'
+    files:
+      - '*.md'
+      - 'docs/**/*'
+  - label: 'tokens'
+    files:
+      - 'src/tokens/**/*'
+  - label: 'component'
+    files:
+      - 'src/components/**/*'
+  - label: 'icons'
+    files:
+      - 'src/icons/**/*'
+  - label: 'ci'
+    files:
+      - '.github/**/*'
+  - label: 'chore'
+    branch:
+      - '/chore\/.+/'
+  - label: 'feature'
+    branch:
+      - '/feature\/.+/'
+  - label: 'fix'
+    branch:
+      - '/fix\/.+/'
+
+# Release notes template
+template: |
+  ## What's Changed
+
+  $CHANGES
+
+  ## Contributors
+
+  $CONTRIBUTORS
+
+  ---
+
+  **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
