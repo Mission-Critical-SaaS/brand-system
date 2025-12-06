@@ -48,6 +48,7 @@
     "build": "tsup && mkdir -p dist/tokens && cp src/tokens/brand-tokens.css dist/tokens/",
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
+    "prepare": "npm run build",
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
