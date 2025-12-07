@@ -544,6 +544,11 @@
   color: var(--brand-error);
 }
 
+.brand-badge-info {
+  background-color: var(--brand-info-light);
+  color: var(--brand-info);
+}
+
 /* Tabs / Navigation */
 .brand-tabs {
   display: flex;
