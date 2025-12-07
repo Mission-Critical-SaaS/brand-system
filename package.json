@@ -1,6 +1,6 @@
 {
   "name": "@mission-critical-saas/brand-system",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCS Brand Design System - CSS tokens, React components, and Tailwind preset",
   "type": "module",
   "main": "./dist/index.js",
