@@ -61,6 +61,7 @@ function FeatureCard() {
 | `@mission-critical-saas/brand-system/icons/lmntl` | LMNTL.AI icons |
 | `@mission-critical-saas/brand-system/icons/mcs` | MCS corporate icons |
 | `@mission-critical-saas/brand-system/components` | React components |
+| `@mission-critical-saas/brand-system/styles/timesheet` | Timesheet component CSS |
 | `@mission-critical-saas/brand-system/tailwind-preset` | Tailwind CSS preset |
 
 ## Brands

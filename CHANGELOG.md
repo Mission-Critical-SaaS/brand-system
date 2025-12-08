@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2025-12-08
+
+### Added
+
+- **Timesheet Component CSS** (`/styles/timesheet`)
+  - Reusable CSS components for timesheet interfaces
+  - View tabs (Calendar/List/Timesheet segmented control)
+  - Calendar view with day columns, time slots, entry blocks
+  - List view with collapsible week groups and entry cards
+  - Entry card component with status badges
+  - Detail panel for time entry editing
+  - Audit log table with pagination
+  - All components use `ts-` prefix for namespacing
+  - Full brand token integration via `var(--brand-*)` custom properties
+  - Works with `data-brand` attribute for brand switching
+
 ## [1.0.0] - 2025-12-06
 
 ### Added
@@ -44,5 +60,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - TypeScript compilation with tsup
 - ESM module format
 
-[Unreleased]: https://github.com/Mission-Critical-SaaS/brand-system/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/Mission-Critical-SaaS/brand-system/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/Mission-Critical-SaaS/brand-system/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/Mission-Critical-SaaS/brand-system/releases/tag/v1.0.0
