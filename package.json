@@ -1,6 +1,6 @@
 {
   "name": "@mission-critical-saas/brand-system",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "MCS Brand Design System - CSS tokens, React components, and Tailwind preset",
   "type": "module",
   "main": "./dist/index.js",
@@ -16,6 +16,7 @@
       "types": "./dist/tokens/index.d.ts"
     },
     "./tokens/css": "./dist/tokens/brand-tokens.css",
+    "./styles/timesheet": "./dist/styles/components/timesheet.css",
     "./icons/hour": {
       "import": "./dist/icons/hour/index.js",
       "types": "./dist/icons/hour/index.d.ts"
@@ -45,7 +46,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup && mkdir -p dist/tokens && cp src/tokens/brand-tokens.css dist/tokens/",
+    "build": "tsup && mkdir -p dist/tokens dist/styles/components && cp src/tokens/brand-tokens.css dist/tokens/ && cp src/styles/components/*.css dist/styles/components/",
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
     "prepare": "npm run build",
