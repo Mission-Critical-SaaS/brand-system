@@ -16,15 +16,16 @@ export const mcsBrandPreset: Partial<Config> = {
 
         // Minute7 Brand
         'minute7-green': colors.minute7.primary,
-        'minute7-light-green': colors.minute7.primaryLight,
+        'minute7-light': colors.minute7.primaryLight,
 
         // Hour Timesheet Brand
         'hour-orange': colors.hour.primary,
-        'hour-light-orange': colors.hour.primaryLight,
+        'hour-light': colors.hour.primaryLight,
 
         // LMNTL.AI Brand
         'lmntl-purple': colors.lmntl.primary,
-        'lmntl-light-purple': colors.lmntl.primaryLight,
+        'lmntl-light': colors.lmntl.primaryLight,
+        'lmntl-dark': colors.lmntl.primaryDark,
 
         // Semantic colors
         'brand-success': colors.semantic.success,

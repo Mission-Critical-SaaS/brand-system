@@ -21,7 +21,7 @@ export const colors = {
   },
   minute7: {
     primary: '#059669',
-    primaryLight: '#10B981',
+    primaryLight: '#22C55E',
     primaryDark: '#047857',
     primary50: '#ECFDF5',
     primary100: '#D1FAE5',
@@ -51,8 +51,8 @@ export const colors = {
   },
   lmntl: {
     primary: '#7C3AED',
-    primaryLight: '#8B5CF6',
-    primaryDark: '#6D28D9',
+    primaryLight: '#A78BFA',
+    primaryDark: '#5B21B6',
     primary50: '#F5F3FF',
     primary100: '#EDE9FE',
     primary200: '#DDD6FE',

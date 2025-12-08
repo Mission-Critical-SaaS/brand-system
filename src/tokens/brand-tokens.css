@@ -131,7 +131,7 @@
 [data-brand="minute7"] {
   /* Primary Colors - Emerald/Green */
   --brand-primary: #059669;
-  --brand-primary-light: #10B981;
+  --brand-primary-light: #22C55E;
   --brand-primary-dark: #047857;
   --brand-primary-50: #ECFDF5;
   --brand-primary-100: #D1FAE5;
@@ -211,8 +211,8 @@
 [data-brand="lmntl"] {
   /* Primary Colors - Purple */
   --brand-primary: #7C3AED;
-  --brand-primary-light: #8B5CF6;
-  --brand-primary-dark: #6D28D9;
+  --brand-primary-light: #A78BFA;
+  --brand-primary-dark: #5B21B6;
   --brand-primary-50: #F5F3FF;
   --brand-primary-100: #EDE9FE;
   --brand-primary-200: #DDD6FE;
@@ -487,6 +487,12 @@
   padding: var(--brand-space-4);
   border-radius: var(--brand-radius-lg);
   font-size: var(--brand-text-sm);
+}
+
+.brand-alert .font-medium,
+.brand-alert-title {
+  font-weight: var(--brand-font-semibold);
+  font-size: var(--brand-text-base);
 }
 
 .brand-alert-info {
