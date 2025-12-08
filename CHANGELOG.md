@@ -16,9 +16,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - View tabs (Calendar/List/Timesheet segmented control)
   - Calendar view with day columns, time slots, entry blocks
   - List view with collapsible week groups and entry cards
+  - **Timesheet grid view (NEW)**
+    - Date picker components (`ts-date-picker`, `ts-date-nav-btn`, `ts-date-range-btn`)
+    - Time summary bar (`ts-time-summary`, `ts-time-totals`, `ts-time-stat`)
+    - Timesheet card wrapper (`ts-timesheet-card`, `ts-timesheet-header`)
+    - Timesheet table (`ts-table-container`, `ts-timesheet-table`)
+    - Column classes (`ts-col-project`, `ts-col-day`, `ts-col-weekend`, `ts-col-total`)
+    - Project cell with color dots (`ts-project-cell`, `ts-project-dot`)
+    - Time input fields (`ts-time-input`)
+    - Totals row (`ts-totals-row`, `ts-totals-label`)
+    - Footer with actions (`ts-timesheet-footer`, `ts-footer-right`)
   - Entry card component with status badges
   - Detail panel for time entry editing
   - Audit log table with pagination
+  - Icon button component (`ts-btn-icon`)
+  - User avatar component (`ts-user-avatar`)
   - All components use `ts-` prefix for namespacing
   - Full brand token integration via `var(--brand-*)` custom properties
   - Works with `data-brand` attribute for brand switching

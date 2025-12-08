@@ -529,3 +529,550 @@
   font-size: var(--brand-text-sm);
   color: var(--brand-neutral-500);
 }
+
+/* ========================================
+   DATE PICKER
+   ======================================== */
+
+.ts-date-picker {
+  display: flex;
+  align-items: center;
+  gap: var(--brand-space-1);
+}
+
+.ts-date-nav-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid var(--brand-neutral-200);
+  border-radius: var(--brand-radius-md);
+  color: var(--brand-neutral-600);
+  cursor: pointer;
+  transition: all var(--brand-transition-fast);
+}
+
+.ts-date-nav-btn:hover {
+  background: var(--brand-neutral-50);
+  border-color: var(--brand-neutral-300);
+}
+
+.ts-date-range-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--brand-space-2);
+  padding: var(--brand-space-2) var(--brand-space-3);
+  background: white;
+  border: 1px solid var(--brand-neutral-200);
+  border-radius: var(--brand-radius-md);
+  font-size: var(--brand-text-sm);
+  font-weight: var(--brand-font-medium);
+  color: var(--brand-neutral-700);
+  cursor: pointer;
+  transition: all var(--brand-transition-fast);
+}
+
+.ts-date-range-btn:hover {
+  background: var(--brand-neutral-50);
+  border-color: var(--brand-neutral-300);
+}
+
+/* ========================================
+   TIME SUMMARY BAR
+   ======================================== */
+
+.ts-time-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--brand-space-3) var(--brand-space-4);
+  background: white;
+  border: 1px solid var(--brand-neutral-200);
+  border-radius: var(--brand-radius-lg);
+  margin-bottom: var(--brand-space-4);
+}
+
+.ts-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: var(--brand-space-2);
+  font-size: var(--brand-text-sm);
+  color: var(--brand-neutral-600);
+  cursor: pointer;
+}
+
+.ts-checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--brand-primary);
+}
+
+.ts-time-totals {
+  display: flex;
+  gap: var(--brand-space-6);
+}
+
+.ts-time-stat {
+  font-size: var(--brand-text-sm);
+  color: var(--brand-neutral-600);
+}
+
+.ts-time-stat strong {
+  font-size: var(--brand-text-base);
+  font-weight: var(--brand-font-semibold);
+  color: var(--brand-primary);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* ========================================
+   TIMESHEET GRID CARD
+   ======================================== */
+
+.ts-timesheet-card {
+  background: white;
+  border: 1px solid var(--brand-neutral-200);
+  border-radius: var(--brand-radius-xl);
+  overflow: hidden;
+  box-shadow: var(--brand-shadow-sm);
+}
+
+.ts-timesheet-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: var(--brand-space-3) var(--brand-space-4);
+  background: var(--brand-neutral-50);
+  border-bottom: 1px solid var(--brand-neutral-200);
+}
+
+.ts-timesheet-controls {
+  display: flex;
+  gap: var(--brand-space-2);
+}
+
+/* ========================================
+   TIMESHEET TABLE
+   ======================================== */
+
+.ts-table-container {
+  overflow-x: auto;
+}
+
+.ts-timesheet-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--brand-text-sm);
+}
+
+.ts-timesheet-table th {
+  padding: var(--brand-space-3);
+  text-align: left;
+  font-weight: var(--brand-font-semibold);
+  color: var(--brand-neutral-600);
+  background: var(--brand-neutral-50);
+  border-bottom: 2px solid var(--brand-neutral-200);
+  white-space: nowrap;
+  font-size: var(--brand-text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.ts-timesheet-table td {
+  padding: var(--brand-space-3);
+  border-bottom: 1px solid var(--brand-neutral-100);
+  vertical-align: middle;
+}
+
+.ts-timesheet-table tbody tr:hover {
+  background: var(--brand-neutral-50);
+}
+
+/* Column Width Classes */
+.ts-col-project {
+  min-width: 200px;
+}
+
+.ts-col-task {
+  min-width: 100px;
+  color: var(--brand-neutral-600);
+}
+
+.ts-col-day {
+  width: 72px;
+  text-align: center;
+}
+
+.ts-col-weekend {
+  background: var(--brand-neutral-50);
+}
+
+.ts-col-total {
+  width: 80px;
+  text-align: right;
+  font-weight: var(--brand-font-semibold);
+  color: var(--brand-neutral-900);
+}
+
+.ts-col-actions {
+  width: 40px;
+  text-align: center;
+}
+
+/* ========================================
+   PROJECT CELL
+   ======================================== */
+
+.ts-project-cell {
+  display: flex;
+  align-items: center;
+  gap: var(--brand-space-2);
+}
+
+.ts-project-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: var(--brand-radius-full);
+  flex-shrink: 0;
+  background: var(--brand-primary);
+}
+
+.ts-project-dot--blue {
+  background: var(--brand-primary-600);
+}
+
+.ts-project-dot--green {
+  background: var(--brand-success);
+}
+
+.ts-project-dot--orange {
+  background: var(--brand-warning);
+}
+
+.ts-project-dot--purple {
+  background: #7C3AED;
+}
+
+/* ========================================
+   TIME INPUT
+   ======================================== */
+
+.ts-time-input {
+  width: 100%;
+  max-width: 56px;
+  padding: var(--brand-space-1) var(--brand-space-2);
+  text-align: center;
+  font-size: var(--brand-text-sm);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  border: 1px solid var(--brand-neutral-200);
+  border-radius: var(--brand-radius-md);
+  background: white;
+  transition: all var(--brand-transition-fast);
+}
+
+.ts-time-input:hover {
+  border-color: var(--brand-neutral-300);
+}
+
+.ts-time-input:focus {
+  outline: none;
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 3px var(--brand-primary-100);
+}
+
+.ts-time-input::placeholder {
+  color: var(--brand-neutral-400);
+}
+
+/* ========================================
+   ICON BUTTON
+   ======================================== */
+
+.ts-btn-icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: var(--brand-radius-md);
+  color: var(--brand-neutral-400);
+  cursor: pointer;
+  transition: all var(--brand-transition-fast);
+}
+
+.ts-btn-icon:hover {
+  background: var(--brand-neutral-100);
+  color: var(--brand-error);
+}
+
+.ts-btn-icon--primary:hover {
+  color: var(--brand-primary);
+}
+
+.ts-btn-icon--success:hover {
+  color: var(--brand-success);
+}
+
+/* ========================================
+   TOTALS ROW
+   ======================================== */
+
+.ts-totals-row {
+  background: var(--brand-primary-50);
+}
+
+.ts-totals-row td {
+  border-bottom: none;
+  border-top: 2px solid var(--brand-primary-100);
+  font-weight: var(--brand-font-semibold);
+}
+
+.ts-totals-label {
+  font-size: var(--brand-text-xs);
+  font-weight: var(--brand-font-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--brand-neutral-600);
+}
+
+/* ========================================
+   TIMESHEET FOOTER
+   ======================================== */
+
+.ts-timesheet-footer {
+  display: flex;
+  align-items: center;
+  gap: var(--brand-space-3);
+  padding: var(--brand-space-4);
+  background: white;
+  border-top: 1px solid var(--brand-neutral-200);
+}
+
+.ts-footer-right {
+  display: flex;
+  align-items: center;
+  gap: var(--brand-space-4);
+  margin-left: auto;
+}
+
+/* ========================================
+   USER AVATAR
+   ======================================== */
+
+.ts-user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--brand-radius-full);
+  background: var(--brand-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--brand-text-xs);
+  font-weight: var(--brand-font-semibold);
+}
+
+.ts-user-avatar--sm {
+  width: 24px;
+  height: 24px;
+  font-size: 10px;
+}
+
+.ts-user-avatar--lg {
+  width: 40px;
+  height: 40px;
+  font-size: var(--brand-text-sm);
+}
+
+/* ========================================
+   LIST VIEW - DAY HEADERS
+   ======================================== */
+
+.ts-list-weeks {
+  margin-bottom: var(--brand-space-6);
+}
+
+.ts-list-day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--brand-space-2) 0;
+  margin-bottom: var(--brand-space-3);
+  border-bottom: 1px solid var(--brand-neutral-100);
+}
+
+.ts-list-day-label {
+  font-size: var(--brand-text-sm);
+  font-weight: var(--brand-font-medium);
+  color: var(--brand-neutral-700);
+}
+
+.ts-list-day-total {
+  font-size: var(--brand-text-sm);
+  font-weight: var(--brand-font-semibold);
+  color: var(--brand-neutral-900);
+}
+
+/* ========================================
+   ENTRY CARD - EXTENDED
+   ======================================== */
+
+.ts-entry-card-meta {
+  font-size: var(--brand-text-sm);
+  color: var(--brand-neutral-500);
+}
+
+/* ========================================
+   SEARCH INPUT
+   ======================================== */
+
+.ts-search-input {
+  position: relative;
+  flex: 1;
+  max-width: 300px;
+}
+
+.ts-search-input svg {
+  position: absolute;
+  left: var(--brand-space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--brand-neutral-400);
+}
+
+.ts-search-input input {
+  width: 100%;
+  height: 36px;
+  padding: 0 var(--brand-space-3) 0 var(--brand-space-10);
+  border: 1px solid var(--brand-neutral-200);
+  border-radius: var(--brand-radius-md);
+  font-size: var(--brand-text-sm);
+  background: white;
+}
+
+.ts-search-input input:focus {
+  outline: none;
+  border-color: var(--brand-primary);
+}
+
+/* ========================================
+   SELECT DROPDOWN
+   ======================================== */
+
+.ts-select {
+  height: 36px;
+  padding: 0 var(--brand-space-8) 0 var(--brand-space-3);
+  border: 1px solid var(--brand-neutral-200);
+  border-radius: var(--brand-radius-md);
+  font-size: var(--brand-text-sm);
+  background: white;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+
+.ts-select:focus {
+  outline: none;
+  border-color: var(--brand-primary);
+}
+
+.ts-select--sm {
+  height: 28px;
+  font-size: var(--brand-text-xs);
+}
+
+/* ========================================
+   PAGINATION
+   ======================================== */
+
+.ts-pagination-btn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid var(--brand-neutral-200);
+  border-radius: var(--brand-radius-md);
+  color: var(--brand-neutral-600);
+  cursor: pointer;
+  transition: all var(--brand-transition-fast);
+}
+
+.ts-pagination-btn:hover:not(:disabled) {
+  background: var(--brand-neutral-50);
+  border-color: var(--brand-neutral-300);
+}
+
+.ts-pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ts-pagination-page,
+.ts-pagination-total {
+  font-size: var(--brand-text-sm);
+  color: var(--brand-neutral-700);
+  min-width: 24px;
+  text-align: center;
+}
+
+.ts-pagination-separator {
+  font-size: var(--brand-text-sm);
+  color: var(--brand-neutral-400);
+}
+
+/* ========================================
+   DETAIL PANEL - EXTENDED
+   ======================================== */
+
+.ts-detail-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--brand-space-4);
+}
+
+.ts-detail-entry-title {
+  font-size: var(--brand-text-lg);
+  font-weight: var(--brand-font-semibold);
+  color: var(--brand-neutral-900);
+  margin: 0;
+}
+
+.ts-detail-entry-actions {
+  display: flex;
+  gap: var(--brand-space-2);
+}
+
+.ts-detail-paytype {
+  color: var(--brand-neutral-500);
+}
+
+.ts-detail-check {
+  color: var(--brand-success);
+}
+
+.ts-icon-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: var(--brand-radius-md);
+  color: var(--brand-neutral-500);
+  cursor: pointer;
+  transition: all var(--brand-transition-fast);
+}
+
+.ts-icon-btn:hover {
+  background: var(--brand-neutral-100);
+  color: var(--brand-neutral-900);
+}
