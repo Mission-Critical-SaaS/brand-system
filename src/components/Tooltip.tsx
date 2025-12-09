@@ -20,14 +20,14 @@
 
 import React, { useState, useRef, useCallback, ReactNode } from 'react';
 
-interface TooltipProps {
+export interface TooltipProps {
   /** The content to display inside the tooltip */
   content: ReactNode;
   /** The element that triggers the tooltip on hover */
   children: ReactNode;
   /** Optional CSS class name for the tooltip container */
   className?: string;
-  /** Offset in pixels from the cursor (default: 12) */
+  /** Offset in pixels from the cursor (default: 12, provides comfortable visual spacing) */
   offset?: number;
 }
 

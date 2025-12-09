@@ -5,4 +5,4 @@ export { TrustBadges } from './TrustBadges';
 export type { TrustBadgesProps, TrustBadgeType } from './TrustBadges';
 
 export { Tooltip, TooltipHeader, TooltipDetail } from './Tooltip';
-export type { default as TooltipProps } from './Tooltip';
+export type { TooltipProps } from './Tooltip';
