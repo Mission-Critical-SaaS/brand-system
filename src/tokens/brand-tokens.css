@@ -627,6 +627,60 @@
   visibility: visible;
 }
 
+/* Cursor-Following Tooltips (Charts & Tables)
+   These tooltips follow the cursor position and auto-flip to avoid viewport overflow.
+   Use with JavaScript for dynamic positioning.
+*/
+.brand-chart-tooltip,
+.brand-table-tooltip {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  background: white;
+  border: 1px solid var(--brand-neutral-200);
+  border-radius: var(--brand-radius-lg);
+  box-shadow: var(--brand-shadow-lg);
+  padding: var(--brand-space-3);
+  min-width: 200px;
+  max-width: 300px;
+  pointer-events: none;
+}
+
+.brand-chart-tooltip.visible,
+.brand-table-tooltip.visible {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.brand-tooltip-header {
+  font-size: var(--brand-text-sm);
+  font-weight: var(--brand-font-semibold);
+  color: var(--brand-neutral-900);
+  padding-bottom: var(--brand-space-2);
+  border-bottom: 1px solid var(--brand-neutral-100);
+  margin-bottom: var(--brand-space-1);
+}
+
+.brand-tooltip-detail {
+  font-size: var(--brand-text-xs);
+  color: var(--brand-neutral-600);
+  display: flex;
+  gap: var(--brand-space-1);
+}
+
+.brand-tooltip-label {
+  font-weight: var(--brand-font-medium);
+  color: var(--brand-neutral-500);
+  min-width: 60px;
+}
+
+/* Tooltip trigger styling */
+.brand-has-tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
 /* Modal */
 .brand-modal-overlay {
   position: fixed;
