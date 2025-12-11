@@ -7,6 +7,54 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2025-12-11
+
+### Added
+
+- **DataTable Component** (`/components`)
+  - Full-featured data table with sorting, filtering, zebra striping
+  - Clickable column headers with sort indicators (arrows up/down)
+  - Loading skeleton state with brand-colored zebra stripes
+  - Empty state with customizable message
+  - Row click handler with keyboard support
+  - CVA variants for styling customization
+  - `useSortState` and `useSortStateWithUrl` hooks for state management
+
+- **DataTableFilters Component**
+  - Simple filter bar with search and select filters
+  - Integrates with DataTable for unified filtering
+
+- **DataTableFiltersAdvanced Component**
+  - Advanced filter bar with multiple filter types
+  - Search, select, date-range, and balance filters
+  - Responsive grid/horizontal/vertical layouts
+  - Clear all filters button
+  - `useFilterState` hook for state management
+
+- **StatusBadge Component**
+  - Consistent status display in tables
+  - Automatic color mapping for common statuses (active, inactive, paid, etc.)
+  - Variant props for manual color control
+
+- **UI Primitives** (`/components/ui`)
+  - Table, TableHeader, TableBody, TableRow, TableHead, TableCell
+  - Skeleton loading component
+  - Input with focus states
+  - Select with Radix UI primitives
+  - Button with CVA variants
+  - Label component
+
+- **Utility Functions** (`/lib`)
+  - `cn()` - Tailwind class merging utility (clsx + tailwind-merge)
+
+### Dependencies
+
+- Added `@radix-ui/react-select` for accessible select components
+- Added `@radix-ui/react-slot` for polymorphic components
+- Added `class-variance-authority` for CVA pattern
+- Added `clsx` and `tailwind-merge` for class utilities
+- Added `lucide-react` for icons
+
 ## [1.1.0] - 2025-12-08
 
 ### Added
@@ -72,6 +120,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - TypeScript compilation with tsup
 - ESM module format
 
-[Unreleased]: https://github.com/Mission-Critical-SaaS/brand-system/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/Mission-Critical-SaaS/brand-system/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/Mission-Critical-SaaS/brand-system/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/Mission-Critical-SaaS/brand-system/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/Mission-Critical-SaaS/brand-system/releases/tag/v1.0.0
