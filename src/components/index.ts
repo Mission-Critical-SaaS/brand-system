@@ -49,5 +49,20 @@ export type {
   BalanceFilterValue,
 } from './data-table';
 
+// Inline Filter Bar (horizontal layout with chips and dropdowns)
+export {
+  DataTableFilterBar,
+  DateRangePicker,
+  SearchInput,
+  FilterChip,
+  FilterDropdown,
+} from './data-table';
+export type {
+  DataTableFilterBarProps,
+  FilterChipConfig,
+  FilterDropdownConfig,
+  DateRangeConfig,
+} from './data-table';
+
 // UI Primitives (for custom table implementations)
 export * from './ui';

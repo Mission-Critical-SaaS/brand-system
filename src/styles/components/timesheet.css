@@ -1076,3 +1076,206 @@
   background: var(--brand-neutral-100);
   color: var(--brand-neutral-900);
 }
+
+/* ========================================
+   FILTER BAR
+   ======================================== */
+
+.ts-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--brand-space-3);
+  padding: var(--brand-space-4);
+  background: white;
+  border: 1px solid var(--brand-neutral-200);
+  border-radius: var(--brand-radius-lg);
+}
+
+.ts-filter-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--brand-space-2) 0;
+  font-size: var(--brand-text-sm);
+  color: var(--brand-neutral-600);
+}
+
+.ts-filter-summary-text {
+  color: var(--brand-neutral-500);
+}
+
+.ts-filter-summary-count {
+  font-weight: var(--brand-font-medium);
+  color: var(--brand-neutral-700);
+}
+
+.ts-filter-clear {
+  color: var(--brand-primary);
+  font-size: var(--brand-text-sm);
+  font-weight: var(--brand-font-medium);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ts-filter-clear:hover {
+  text-decoration: underline;
+}
+
+/* ========================================
+   FILTER CHIP (Removable pill)
+   ======================================== */
+
+.ts-filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--brand-space-1);
+  padding: var(--brand-space-1) var(--brand-space-2) var(--brand-space-1) var(--brand-space-3);
+  background: var(--brand-neutral-100);
+  border: 1px solid var(--brand-neutral-200);
+  border-radius: var(--brand-radius-full);
+  font-size: var(--brand-text-sm);
+  color: var(--brand-neutral-700);
+}
+
+.ts-filter-chip-remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  border-radius: var(--brand-radius-full);
+  color: var(--brand-neutral-500);
+  cursor: pointer;
+  transition: all var(--brand-transition-fast);
+}
+
+.ts-filter-chip-remove:hover {
+  background: var(--brand-neutral-200);
+  color: var(--brand-neutral-700);
+}
+
+/* ========================================
+   FILTER DROPDOWN BUTTON
+   ======================================== */
+
+.ts-filter-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.ts-filter-dropdown-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--brand-space-2);
+  padding: var(--brand-space-2) var(--brand-space-3);
+  background: white;
+  border: 1px solid var(--brand-neutral-200);
+  border-radius: var(--brand-radius-md);
+  font-size: var(--brand-text-sm);
+  font-weight: var(--brand-font-medium);
+  color: var(--brand-neutral-700);
+  cursor: pointer;
+  transition: all var(--brand-transition-fast);
+}
+
+.ts-filter-dropdown-btn:hover {
+  background: var(--brand-neutral-50);
+  border-color: var(--brand-neutral-300);
+}
+
+.ts-filter-dropdown-btn--active {
+  background: var(--brand-primary);
+  border-color: var(--brand-primary);
+  color: white;
+}
+
+.ts-filter-dropdown-btn--active:hover {
+  background: var(--brand-primary-dark);
+  border-color: var(--brand-primary-dark);
+}
+
+.ts-filter-dropdown-chevron {
+  transition: transform var(--brand-transition-fast);
+}
+
+.ts-filter-dropdown[data-open="true"] .ts-filter-dropdown-chevron {
+  transform: rotate(180deg);
+}
+
+.ts-filter-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 50;
+  min-width: 180px;
+  padding: var(--brand-space-1);
+  background: white;
+  border: 1px solid var(--brand-neutral-200);
+  border-radius: var(--brand-radius-md);
+  box-shadow: var(--brand-shadow-lg);
+}
+
+.ts-filter-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: var(--brand-space-2);
+  width: 100%;
+  padding: var(--brand-space-2) var(--brand-space-3);
+  background: none;
+  border: none;
+  border-radius: var(--brand-radius-sm);
+  font-size: var(--brand-text-sm);
+  color: var(--brand-neutral-700);
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--brand-transition-fast);
+}
+
+.ts-filter-dropdown-item:hover {
+  background: var(--brand-neutral-100);
+}
+
+.ts-filter-dropdown-item--selected {
+  background: var(--brand-primary-50);
+  color: var(--brand-primary);
+}
+
+.ts-filter-dropdown-item-check {
+  width: 16px;
+  color: var(--brand-primary);
+}
+
+/* ========================================
+   MULTI-SELECT DROPDOWN
+   ======================================== */
+
+.ts-filter-multi-item {
+  display: flex;
+  align-items: center;
+  gap: var(--brand-space-2);
+  width: 100%;
+  padding: var(--brand-space-2) var(--brand-space-3);
+  background: none;
+  border: none;
+  border-radius: var(--brand-radius-sm);
+  font-size: var(--brand-text-sm);
+  color: var(--brand-neutral-700);
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--brand-transition-fast);
+}
+
+.ts-filter-multi-item:hover {
+  background: var(--brand-neutral-100);
+}
+
+.ts-filter-multi-checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--brand-primary);
+}
