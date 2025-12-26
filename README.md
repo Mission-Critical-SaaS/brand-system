@@ -108,6 +108,15 @@ Set the brand context with `data-brand` attribute:
 </div>
 ```
 
+## Projects Using This Package
+
+| Project | Domain | Description |
+|---------|--------|-------------|
+| Marketing Site | `lmntl.ai`, `*.preview.lmntl.ai` | Company marketing website |
+| LMNTL GL | `app.lmntl.ai`, `*.dev.lmntl.ai` | General Ledger application |
+| Minute7 | `minute7.com` | Time tracking product |
+| Hour Timesheet | `hourtimesheet.com` | DCAA compliance product |
+
 ## License
 
 MIT - LMNTL
