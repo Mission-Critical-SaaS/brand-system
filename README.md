@@ -1,6 +1,8 @@
 # @mission-critical-saas/brand-system
 
-MCS Brand Design System - CSS tokens, React components, and Tailwind preset for Hour Timesheet, Minute7, LMNTL.AI, and Mission Critical SaaS products.
+LMNTL Brand Design System - CSS tokens, React components, and Tailwind preset for Hour Timesheet, Minute7, and LMNTL.AI products.
+
+> **Note**: The package name remains `@mission-critical-saas/brand-system` for backward compatibility.
 
 ## Installation
 
@@ -66,10 +68,10 @@ function FeatureCard() {
 
 ## Brands
 
-- **mcs** - Mission Critical SaaS (blue)
+- **lmntl** - LMNTL.AI platform (purple) - Default
 - **minute7** - Minute7 QuickBooks integration (green)
 - **hour** - Hour Timesheet DCAA compliance (orange)
-- **lmntl** - LMNTL.AI platform (purple)
+- **mcs** - Legacy Mission Critical SaaS (blue)
 
 ## Tailwind CSS Preset
 
@@ -108,4 +110,4 @@ Set the brand context with `data-brand` attribute:
 
 ## License
 
-MIT - Mission Critical SaaS
+MIT - LMNTL

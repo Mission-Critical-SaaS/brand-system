@@ -1,11 +1,11 @@
 /**
  * Brand Design Tokens
  *
- * Comprehensive CSS custom properties for all MCS brands.
+ * Comprehensive CSS custom properties for all LMNTL brands.
  * Use these tokens to ensure consistent styling across brands.
  *
  * Usage:
- *   1. Add data-brand="mcs|minute7|hour|lmntl" to a container element
+ *   1. Add data-brand="lmntl|minute7|hour|mcs" to a container element
  *   2. Use var(--brand-*) properties inside that container
  *   3. Components will automatically adopt brand styling
  *
@@ -13,27 +13,27 @@
  */
 
 /* ==========================================================================
-   BASE BRAND: Mission Critical SaaS (Default)
+   BASE BRAND: LMNTL.AI (Default)
    ========================================================================== */
 
 :root,
-[data-brand="mcs"] {
-  /* Primary Colors */
-  --brand-primary: #1E40AF;
-  --brand-primary-light: #3B82F6;
-  --brand-primary-dark: #1E3A8A;
-  --brand-primary-50: #EFF6FF;
-  --brand-primary-100: #DBEAFE;
-  --brand-primary-200: #BFDBFE;
-  --brand-primary-500: #3B82F6;
-  --brand-primary-600: #2563EB;
-  --brand-primary-700: #1D4ED8;
-  --brand-primary-800: #1E40AF;
-  --brand-primary-900: #1E3A8A;
+[data-brand="lmntl"] {
+  /* Primary Colors - Purple */
+  --brand-primary: #7C3AED;
+  --brand-primary-light: #A78BFA;
+  --brand-primary-dark: #5B21B6;
+  --brand-primary-50: #F5F3FF;
+  --brand-primary-100: #EDE9FE;
+  --brand-primary-200: #DDD6FE;
+  --brand-primary-500: #8B5CF6;
+  --brand-primary-600: #7C3AED;
+  --brand-primary-700: #6D28D9;
+  --brand-primary-800: #5B21B6;
+  --brand-primary-900: #4C1D95;
 
-  /* Secondary/Accent */
-  --brand-accent: #3B82F6;
-  --brand-accent-light: #60A5FA;
+  /* Secondary/Accent - Purple shades */
+  --brand-accent: #A78BFA;
+  --brand-accent-light: #C4B5FD;
 
   /* Semantic Colors */
   --brand-success: #059669;

@@ -1,7 +1,7 @@
 {
   "name": "@mission-critical-saas/brand-system",
   "version": "1.3.0",
-  "description": "MCS Brand Design System - CSS tokens, React components, and Tailwind preset",
+  "description": "LMNTL Brand Design System - CSS tokens, React components, and Tailwind preset",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -90,7 +90,7 @@
     "tailwind",
     "react"
   ],
-  "author": "Mission Critical SaaS",
+  "author": "LMNTL",
   "license": "MIT",
   "dependencies": {
     "@radix-ui/react-select": "^2.2.6",
