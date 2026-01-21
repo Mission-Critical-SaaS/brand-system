@@ -25,6 +25,7 @@ export const mcsBrandPreset: Partial<Config> = {
         // LMNTL.AI Brand
         'lmntl-purple': colors.lmntl.primary,
         'lmntl-light': colors.lmntl.primaryLight,
+        'lmntl-light-purple': colors.lmntl.primaryLight, // Alias for compatibility
         'lmntl-dark': colors.lmntl.primaryDark,
 
         // Semantic colors
